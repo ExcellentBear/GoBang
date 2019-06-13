@@ -146,7 +146,7 @@ struct GobangLine{
 
     //用于 插入std::set结构
     bool operator <(const GobangLine &line) const{
-         return 15*(axis+10)+x + y < 15*(line.axis+10)+line.x + line.y;
+         return 100*(axis+10)+10*x + y < 100*(line.axis+10)+ 10*line.x + line.y;
     }
 
 };
